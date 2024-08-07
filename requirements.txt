@@ -1,0 +1,8 @@
+## Requirements
+
+This project requires Python 3.10 and the following Python libraries:
+
+- yfinance
+- pandas
+- numpy
+- scikit-learn
