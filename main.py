@@ -11,13 +11,15 @@ from fiveday_1u_price_recovery import check_price_drop_and_recovery
 def main():
     # Define common parameters
     tickers = ['AAPL', 'GOOG', 'MSFT', 'TSLA']
-    start_date = '2022-01-01'
-    end_date = '2022-01-31'
+    
+    # Prompt user for start and end dates
+    start_date = input("Enter the start date (YYYY-MM-DD): ")
+    end_date = input("Enter the end date (YYYY-MM-DD): ")
+    
     drop_percentage = 0.05
     increase_percentage = 0.01
 
     # Run 5% Drop Hypothesis Test
-    # Run 5% Drop Hypothesis
     print("Running 5% Drop Hypothesis Test:")
     drop_results = check_price_drop(tickers, start_date, end_date)
     print(drop_results)
